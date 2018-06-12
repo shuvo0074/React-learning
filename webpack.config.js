@@ -16,7 +16,9 @@ var config = {
     module: { 
         rules: [ 
             { 
-                use: [ 
+                test: /\.js?/,
+                include: SRC_DIR,
+                use: [                   
                     {   
                         
                         loader: "babel-loader", 
