@@ -1,11 +1,16 @@
 import React from "react";
 
-export class Header extends React.Component{
-    render(){
+export const Header = (props) => {
         return(
-            <h1>
-                Hello world!!
-            </h1>
+            props.id==0?
+            
+                <h1>
+                Hello {props.name}!!
+                </h1>
+                :
+                <h1>
+                Hello {props.name} {props.id} !!
+                </h1>
+           
         )
-    }
 }
