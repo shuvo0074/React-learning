@@ -48,6 +48,9 @@ export class PageBody extends React.Component{
                 <h1 style={{backgroundColor: 'blue',height:100,alignItems: 'center'}} >
                 Hello body!!
                 </h1>
+                <div>
+                    {this.props.children}
+                </div>
                 {
                     this.state.headerId==4?
                     <Header name={this.state.passValue} id={this.state.headerId} />
