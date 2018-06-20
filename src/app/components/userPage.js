@@ -44,7 +44,7 @@ export class UserPage extends React.Component{
     render(){
         return(
             <div>
-                <h1> User !!  </h1>
+                <h1> User  Number: </h1>
                 <p>This is user !!</p>
                 <button onClick={()=>{
                     console.log("hello Katyusha")
